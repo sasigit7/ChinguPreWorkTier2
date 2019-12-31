@@ -1,0 +1,262 @@
+/* GLOBAL STYLES */
+body {
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+  }
+  
+  h1,
+  h2,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  input,
+  select,
+  button {
+    border: none;
+  }
+  
+  a {
+    color: grey;
+  }
+  
+  #hide {
+    display: none;
+  }
+  
+  /* HEADER STYLES */
+  header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+  }
+  
+  #headerNav,
+  #headerNav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #headerNav {
+    margin: 18px 42px;
+    font-family: "Roboto";
+    color: gray;
+  }
+  
+  #headerNav h1 {
+    font-weight: bold;
+    font-size: 18px;
+    word-spacing: -2px;
+  }
+  
+  #headerNav h1 #lighterColor {
+    font-weight: normal;
+  }
+  
+  #headerNav ul li {
+    margin: 9px;
+  }
+  
+  #headerNav ul li a:hover {
+    text-decoration: none;
+    text-decoration-color: grey;
+    cursor: pointer;
+  }
+  
+  /* MAIN GLOBAL STYLES */
+  main {
+    width: calc(100vw - 84px);
+    min-width: 320px;
+    margin: 18px auto;
+  }
+  
+  /* MAIN NAV STYLES */
+  #mainNav {
+    border: 1px solid gray;
+    border-radius: 35px;
+    padding: 8px 32px;
+  }
+  
+  #mainNav,
+  #mainNavModify,
+  #darkLightMode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #mainNavModify {
+    justify-content: space-between;
+    margin-left: 18px;
+  }
+  
+  #darkLightMode button {
+    height: 16px;
+    width: 16px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 0 3px;
+  }
+  
+  #black {
+    background-color: black;
+  }
+  
+  #white {
+    background-color: white;
+  }
+  #fontSize {
+    flex-grow: 1;
+    font-family: "Roboto";
+  }
+  
+  #searchFonts,
+  #customText,
+  #mainNavModify {
+    flex-grow: 3;
+    font-family: "Roboto";
+  }
+  
+  #searchFonts,
+  #customText {
+    border-right: 1px solid gray;
+    margin-right: 3px;
+  }
+  
+  #gridListMode {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0 4px;
+  }
+  
+  /* FONT CARD CONTAINER STYLES */
+  #fontCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 18px 0;
+  }
+  
+  /* FONT CARD STYLES */
+  .fontCardName {
+    height: 290px;
+    width: calc(25% - 3em);
+    border-top: 1px solid black;
+    padding-top: 9px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 calc(12em / 8);
+  }
+  
+  .fontCardName .fontButton {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 15px;
+  }
+  
+  .fontCardDetails p {
+    color: gray;
+    margin-top: 8px;
+  }
+  
+  .fontCardName,
+  .fontCardDetails p {
+    font-family: "Roboto";
+    font-size: 16px;
+  }
+  
+  .fontCardText {
+    padding-top: 32px;
+    font-size: 32px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* FOOTER STYLES */
+  footer {
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  footer a {
+      margin-right: 10px;
+  }
+  
+  /*  MEDIA QUERIES */
+  
+  @media (max-width: 1200px) {
+    :root {
+      --fontCardNameWidth: calc(33% - 3em);
+    }
+  }
+  
+  @media (max-width: 950px) {
+    :root {
+      --fontCardNameWidth: calc(50% - 3em);
+    }
+  }
+  
+  @media (max-width: 800px) {
+      :root {
+          --fontCardNameWidth: calc(17% - 3em);
+      }
+  }
+  @media (max-width: 700px) {
+    :root {
+      --fontCardNameWidth: 100%;
+    }
+  
+    #mainNav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #mainNavUl {
+      font-size: 9px;
+      margin-top: 6px;
+    }
+  
+    #mainNav ul li {
+      margin: 0 9px 0 0;
+    }
+  
+    #customText,
+    #fontSize,
+    #darkLightMode {
+      display: none;
+    }
+  
+    #searchFonts {
+      flex-grow: 3;
+    }
+  
+    #resetMode {
+      flex-grow: 1;
+    }
+  
+    main {
+      width: calc(100vw - 32px);
+    }
+  }
+  
+  

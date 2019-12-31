@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Chingu | Pre-Project Work | Tier 2: Favorite Fonts</title>
+
+  <!-- EXTERNAL LINKS -->
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-auto-a11y="true">
+  </script>
+  <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri|Lato|Manjari|Montserrat|Open+Sans|Roboto|Roboto+Condensed&display=swap" />
+</head>
+
+<body>
+  <!-- HEADER SECTION -->
+  <!-- Structure Requirement: Header with minor navigation(Logo and Catalog/Featured/Articles/About link list) -->
+  <header>
+    <nav id="headerNav">
+      <h1><span id="lightColor">Google Fonts</span></h1>
+      <ul id="headerNavUl">
+        <li><a href="#">CATALOG</a></li>
+        <li><a href="#">FEATURED</a></li>
+        <li><a href="#">ARTICLES</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- Structure Requirement: Nav with Major Navigation/page-manipulation(search fonts, custom text, font-size, dark/light mode, grid/list mode and reset) -->
+    <nav id="mainNav">
+      <!-- Search fonts-->
+      <input type="text" name="search-fonts" id="searchFonts" placeholder="Search fonts" />
+      <!-- Custom Text -->
+      <input type="text" name="custom-text" id="customText" placeholder="Type something" />
+      <!-- Font Size -->
+      <select id="fontSize">
+        <option value="20">20px</option>
+        <option value="24">24px</option>
+        <option value="30">30px</option>
+        <option value="40">40px</option>
+      </select>
+
+      <div id="mainNavModify">
+        <!-- Dark/Light Mode -->
+        <div id="darkLightMode">
+          <button type="radio" id="black"></button>
+          <button type="radio" id="white"></button>
+        </div>
+        <!-- Grid/List Mode -->
+        <button type="button" name="grid-list-mode" id="gridListMode" class="glbtn">
+          <i class="fas fa-border-all" id="hide"></i>
+          <i class="fas fa-list-ul"></i>
+        </button>
+        <!-- Reset Mode -->
+        <button type="button" name="reset-mode" id="resetMode">
+          <i class="fas fa-redo"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Structure Requirement: Main section to contain the font cards -->
+    <section id="fontCardsContainer">
+      <!-- Structure Requirement: Font cards which display the Font Name, the font creator, the sample text, and an add button -->
+      <div class="fontCardName">
+        <div class="fontCardDetails">
+          <h2>Roboto</h2>
+          <p>Christian Robertson</p>
+          <input type="text" name="inputFields" style="font-family: Roboto;" class="fontCardText"
+            value="This is Tier-2 Chingu PreWork Project." />
+          <p class="fontButton">+</p>
+        </div>
+      </div>
+
+      <div class="fontCardName">
+        <div class="fontCardDetails">
+          <h2>Gayathri</h2>
+          <p>SMC</p>
+          <input type="text" name="inputFields" style="font-family: Gayathri;" class="fontCardText"
+            value="This is Tier-2 Chingu PreWork Project." />
+          <p class="fontButton">+</p>
+        </div>
+      </div>
+
+      <div class="fontCardName">
+        <div class="fontCardDetails">
+          <h2>Chilanka</h2>
+          <p>SMC</p>
+          <input type="text" name="inputFields" style="font-family: Chilanka;" class="fontCardText"
+            value="This is Tier-2 Chingu PreWork Project." />
+          <p class="fontButton">+</p>
+        </div>
+      </div>
+
+      <div class="fontCardName">
+        <div class="fontCardDetails">
+          <h2>Open Sans</h2>
+          <p>Steve Matteson</p>
+          <input type="text" name="inputFields" style="font-family: Open Sans;" class="fontCardText"
+            value="This is Tier-2 Chingu PreWork Project." />
+          <p class="fontButton">+</p>
+        </div>
+      </div>
+
+      <div class="fontCardName">
+        <div class="fontCardDetails">
+          <h2>Lato</h2>
+          <p>Lukasz Dziedzic</p>
+          <input type="text" name="inputFields" style="font-family: Lato;" class="fontCardText"
+            value="This is Tier-2 Chingu PreWork Project." />
+          <p class="fontButton">+</p>
+        </div>
+      </div>
+
+      <div class="fontCardName">
+        <div class="fontCardDetails">
+          <h2>Manjari</h2>
+          <p>Santhosh Thottingal</p>
+          <input type="text" name="inputFields" style="font-family: Manjari;" class="fontCardText"
+            value="This is Tier-2 Chingu PreWork Project." />
+          <p class="fontButton">+</p>
+        </div>
+      </div>
+
+      <div class="fontCardName">
+        <div class="fontCardDetails">
+          <h2>Montserrat</h2>
+          <p>Julieta Ulanovsky</p>
+          <input type="text" name="inputFields" style="font-family: Montserrat;" class="fontCardText"
+            value="This is Tier-2 Chingu PreWork Project." />
+          <p class="fontButton">+</p>
+        </div>
+      </div>
+
+      <div class="fontCardName">
+        <div class="fontCardDetails">
+          <h2>Roboto Condensed</h2>
+          <p>Christian Robertson</p>
+          <input type="text" name="inputFields" style="font-family: Roboto Condensed;" class="fontCardText"
+            value="This is Tier-2 Chingu PreWork Project." />
+          <p class="fontButton">+</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <!-- Footer section with Developer Information -->
+  <footer>
+    <P>Coded by Shashi@2019 || Chingu Pre-Work Project : Tier2 || Voyage15
+      <br />
+      <br />
+      <a href="https://github.com/sasigit7" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/shashidar-mandalozu-0a3b8244/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/ShashiWebDev" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </P>
+  </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
